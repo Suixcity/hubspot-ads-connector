@@ -42,7 +42,7 @@ Deployed on Google Cloud Functions. Called from HubSpot workflows via webhook ac
 | `conversionValue` | No | Deal amount or static fallback |
 | `conversionCurrency` | No | Defaults to account currency if omitted |
 
-### `workflow-action.js` — LinkedIn Custom Coded Action
+### `linkedin-workflow-action.js` — LinkedIn Custom Coded Action
 
 Runs natively inside HubSpot's workflow engine as a custom coded action. One instance per workflow, each with its own `{{conversion_id}}`.
 
@@ -84,7 +84,7 @@ Runs natively inside HubSpot's workflow engine as a custom coded action. One ins
 2. Create a conversion event for each workflow. Note the numeric ID from the conversion URN.
 3. Generate an access token from the same Signals Manager interface.
 4. Store the token in HubSpot's secret store as `linkedin_access_token`.
-5. In each HubSpot workflow, add a custom coded action using `workflow-action.js`. Replace `{{conversion_id}}` with the event-specific ID. Add `email`, `firstName`, and `lastName` as input properties.
+5. In each HubSpot workflow, add a custom coded action using `linkedin-workflow-action.js`. Replace `{{conversion_id}}` with the event-specific ID. Add `email`, `firstName`, and `lastName` as input properties.
 
 ## Tech Stack
 
