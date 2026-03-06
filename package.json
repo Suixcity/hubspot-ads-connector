@@ -1,0 +1,13 @@
+{
+  "name": "google-ads-conversion-function",
+  "version": "1.0.0",
+  "description": "Serverless function to send conversions to Google Ads API",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/secret-manager": "^5.0.0",
+    "axios": "^1.6.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
